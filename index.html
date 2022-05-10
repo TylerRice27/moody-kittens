@@ -7,7 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Moody Kittens | CodeWorks</title>
   <link rel="shortcut icon" href="moody-logo.png" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href=//cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,7 +19,7 @@
   <header class="bg-dark d-flex align-items-center p-1 space-between">
     <img src="moody-logo.png" height="60" alt="Moody Kittens">
     <form class="" onsubmit="addKitten(event)">
-      <div class="d-flex">
+      <div id="submit-name" class="d-flex hidden">
         <input placeholder="Name" type="text" name="name" />
         <button class="btn-special" type="submit">
           /ᐠ｡ꞈ｡ᐟ\
@@ -28,11 +32,12 @@
       <div class="card p-2 text-center w-50">
         <img src="moody-logo.png" height="250" alt="Moody Kittens">
         <div class="mt-2">
-          <b class="text-center">Hello Student</b>
-          <p>This is your starter template only feel free to modify the look as you tackle the challenges that we have laid out.</p>
-          <small>Good Luck and Have Fun!</small>
+          <b class="text-center">MEOW!</b>
+          <p>Kittens for everyone!</p>
+          <small>Have Fun!</small>
           <br>
           <button onclick="getStarted()">Get Started</button>
+          <button button class="btn-cancel m-1" onclick="clearKittens()">Clear All Kittens</button>
         </div>
       </div>
     </div>
